@@ -241,31 +241,36 @@
 
 // **************************  slide show   *************************
 
-.mySlides {display: none;margin:0px;padding:5px;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
-  width: 100%;
+  max-width: 1000px;
   position: relative;
-  margin: 0px;
-  padding:50px 5px 5px 5px;
+  margin: auto;
 }
 
 /* Caption text */
 .text {
-  color: black;
+  color: #f2f2f2;
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
   bottom: 8px;
   width: 100%;
   text-align: center;
-  margin:0px;padding:5px;
 }
 
-.indicator{
-  padding-top:50px;
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
 }
+
 /* The dots/bullets/indicators */
 .dot {
   height: 15px;
@@ -288,15 +293,6 @@
   animation-name: fade;
   animation-duration: 1.5s;
 }
-.centered {
-  margin:0px;
-  padding:70px 5px 5px 5px;
-  position: absolute;
-  text-align: center;
-  font-size: 22px;
-  line-height: 110%;
-  width:100%;height:200px;
-}
 
 @-webkit-keyframes fade {
   from {opacity: .4} 
@@ -313,190 +309,21 @@
   .text {font-size: 11px}
 }
 
-.LightPattern1{
-  background:linear-gradient(245deg, transparent 25%, #DEB887 75%) 7px -15px, #FEF5E7;  background-color: #FEF5E7;  background-size: 20px 20px;
-}
-.LightPattern10{
-  background:radial-gradient(circle, transparent 25%, #DEB887 20%, #FEF5E7 80%, transparent 50%, transparent);  background-color: #FEF5E7;  background-size: 5px 5px;
-}
-.LightPattern2{
-  background:radial-gradient(circle, transparent 25%, #DEB887 20%, #FEF5E7 80%, transparent 80%, transparent);  background-color: #FEF5E7;  background-size: 20px 20px;
-}
-.LightPattern3{
-  background-image: radial-gradient(#DEB887 15%, transparent 16%), radial-gradient(#DEB887 15%, transparent 16%); background-color: #FEF5E7; background-size: 0 0, 5px 5px;
-}
-.LightPattern4{
-  background-image: radial-gradient(#DEB887 15%, transparent 16%), radial-gradient(#DEB887 15%, transparent 16%);  background-color: #FEF5E7;  background-size: 0 0, 5px 5px;
-}
-.LightPattern5{
-  background: linear-gradient(45deg, #dca 12%, transparent 0, transparent 88%, #dca 0),linear-gradient(-45deg, transparent 37%, #dca 0, #dca 63%, transparent 0) #753;  background-color: #FEF5E7;  background-size: 10px 10px;
-}
-.LightPattern6{
-  background: linear-gradient(45deg, #dca 12%, transparent 0, transparent 88%, #dca 0), linear-gradient(-45deg, transparent 37%, #dca 0, #dca 63%, transparent 0) #753;  background-color: #FEF5E7;  background-size:  0 0, 5px 5px;
-}
-.LightPattern7{
-  background-image: radial-gradient(#DEB887 15%, transparent 16%), radial-gradient(#DEB887 25%, transparent 16%);  background-color: #FEF5E7;  background-size: 0 0, 10px 10px;
-}
-.LightPattern8{
-  background: linear-gradient(45deg, #dca 12%, transparent 0, transparent 88%, #dca 0),linear-gradient(35deg, transparent 37%, #dca 0, #dca 63%, transparent 0) #753;  background-color: #FEF5E7;  background-size: 2px 2px;
-}
-.LightPattern9{
-  background: linear-gradient(45deg, #dca 12%, transparent 0, transparent 88%, #dca 0), linear-gradient(45deg, transparent 37%, #dca 0, #dca 63%, transparent 0) #753;  background-color: #FEF5E7;  background-size:  0 0, 5px 5px;
-}
-
-</style>
+  </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="10">
 
 <nav class="navbar navbar-default navbar-fixed-top" style="margin:0px;padding:0px;">
   <div class="container" style="margin:0px;padding:5px;">
     <div class="navbar-header"  >
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="background-color:#FEF5E7;">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
       <div style="overflow:hidden;white-space: nowrap;"><img class='rotateimage' src='https://sites.google.com/site/ameonlinesolutions/AMELogo.jpg' alt='AME Logo' style='margin:2px 2px 5px 10px;padding:0px;float:left;width:40px;height:40px;border-radius:18px;border:1px solid #fff;display: block;' > <font color=white style='font-family: Impact, Charcoal, serif;font-size:32px;white-space: nowrap;padding:0px;'>&nbsp; AME Online Solutions</font></div>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar" >
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#About">ABOUT</a></li>
-        <li><a href="#Modules">MODULES</a></li>
-        <li><a href="#Features">FEATURES</a></li>
-        <li><a href="#findmyblock">FIND MY BLOCK</a></li>
-        <li><a href="#contact">CONTACT</a></li>
-        <li><a href="https://login.ameonlinesolutions.com" target="_blank">LOGIN</a></li>
-      </ul>
     </div>
   </div>
 </nav>
 
-
-
-
-
-
-
-
-
-
-
-<!-- Container (About Section) -->
-<div id="About" class="container-fluid" >
-  <div class="row">
-    <div class="col-sm-2" align="center">
-      <a href="https://www.webfreecounter.com/" target="_blank"><img alt="web counter" src="https://www.webfreecounter.com/hit.php?id=grrmxkfxa&amp;nd=7&amp;style=45" border="0"></a>
-    </div>
-    <div class="col-sm-10">
-      <h2 align="center">About Us</h2>
-      <h4 style="text-align: justify;">AME Online Solutions is based in Pune, India. We have been in business since 2017 and offering our services to our customers. We provide online solutions mainly for academic institutions.  For other organizations we offer customized solutions that requires to manage the data.<br><br>
-      Our innovative development team is very strong, enabling us to provide our clients with cost effective and robust solutions. Our strength is to offer highly customized solutions to your day-to-day problems so that you can organize your tasks and achieve your goals effectively.
-We are sure that we will be in a position to provide you the best of our services. If you would like to try our modules please feel free to contact us.</h4><br>
-    </div>
-  </div>
-</div>
-
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-sm-2" align="center" style="padding:100px 0px 0px 0px;">
-      <i class="fa fa-bullseye fa-spin" style="font-size:72px;padding:6px 5px 5px 5px;color:#b47800"></i>
-    </div>
-    <div class="col-sm-10">
-      <h2 align="center">Our Values</h2><br>
-      <h4><strong>VISION:</strong> Empowering our customers by providing the required data of their business in few clicks.<br><br>
-      <strong>MISSION:</strong> Our mission is to have continuous improvement towards customer delight.</h4><br><br>
-    </div>
-  </div>
-</div>
-
-<!-- Container (Modules Section) -->
-<div id="Modules" class="container-fluid text-center">
-  <h2>MODULES</h2>
-  <h4>What we offer</h4>
-  <br>
-  <div class="row slideanim">
-    <div class="col-sm-4" align=center>
-      <div style="border-radius: 20px 20px 20px 20px;background-color: #b47800;  border: 2px solid black; color: black;padding: 10px 10px 10px 10px;display:inline-block;"><img src='https://sites.google.com/site/vmkale/sAcademics.jpg' alt='Academics' style='margin:0px;padding:0px;align:center;width:60px;height:60px;border-radius:10px;border:1px solid #fff;display: block;' ></div>
-      <h4>ACADEMICS</h4>
-      <p>CO-PO Mapping,Defaulter's List,Mentoring,<br>Class Coordination, Academic Coordination etc.</p>
-    </div>
-    <div class="col-sm-4">
-      <div style="border-radius: 20px 20px 20px 20px;background-color: #b47800;  border: 2px solid black; color: black;padding: 10px 10px 10px 10px;display:inline-block;"><img src='https://sites.google.com/site/vmkale/sExam.jpg' alt='Exam' style='margin:0px;padding:0px;align:center;width:60px;height:60px;border-radius:10px;border:1px solid #fff;display: block;' ></div>
-      <h4>EXAMINATION</h4>
-      <p>Block Preparation, Supervision Orders, Display Marks,<br>Remuneration, Exam-at-a-Glance, Result Analysis etc.</p>
-    </div>
-    <div class="col-sm-4">
-            <div style="border-radius: 20px 20px 20px 20px;background-color: #b47800;  border: 2px solid black; color: black;padding: 10px 10px 10px 10px;display:inline-block;"><img src='https://sites.google.com/site/vmkale/sDashboard.jpg' alt='Dashboard' style='margin:0px;padding:0px;align:center;width:60px;height:60px;border-radius:10px;border:1px solid #fff;display: block;' ></div>
-
-      <h4>DASHBOARD</h4>
-      <p>Staff Count, Student Count, Student Fees,<br>Staff Details, Academic Info, Exam Info etc.</p>
-    </div>
-  </div>
-  <br><br>
-  <div class="row slideanim">
-    <div class="col-sm-4">
-            <div style="border-radius: 20px 20px 20px 20px;background-color: #b47800;  border: 2px solid black; color: black;padding: 10px 10px 10px 10px;display:inline-block;"><img src='https://sites.google.com/site/vmkale/sHR.jpg' alt='HR' style='margin:0px;padding:0px;align:center;width:60px;height:60px;border-radius:10px;border:1px solid #fff;display: block;' ></div>
-
-      <h4>HR</h4>
-      <p>Biometric Attendance, Online Approvals, Appraisals,<br>Leave Management, 360 Degree Feedback etc.</p>
-    </div>
-    <div class="col-sm-4">
-            <div style="border-radius: 20px 20px 20px 20px;background-color: #b47800;  border: 2px solid black; color: black;padding: 10px 10px 10px 10px;display:inline-block;"><img src='https://sites.google.com/site/vmkale/sStudents.jpg' alt='Students' style='margin:0px;padding:0px;align:center;width:60px;height:60px;border-radius:10px;border:1px solid #fff;display: block;' ></div>
-
-      <h4>STUDENTS</h4>
-      <p>Admission Process, Bonafide Certificate, Certifications,<br>Transfer Certificates, Student Progression etc. </p>
-    </div>
-    <div class="col-sm-4">
-            <div style="border-radius: 20px 20px 20px 20px;background-color: #b47800;  border: 2px solid black; color: black;padding: 10px 10px 10px 10px;display:inline-block;"><img src='https://sites.google.com/site/vmkale/sServices.jpg' alt='Services' style='margin:0px;padding:0px;align:center;width:60px;height:60px;border-radius:10px;border:1px solid #fff;display: block;' ></div>
-
-      <h4 style="color:#303030;">SERVICES</h4>
-      <p>Accounts Dept, Budget, Hostel,<br>Expenses, Transport, Hall Bookings etc.</p>
-    </div>
-  </div>
-</div>
 <br><br>
-<!-- Container (Features Section) -->
-<div id="Features" class="container-fluid">
-  <div class="text-center">
-    <h2>Features</h2>
-    <h4>Salient Features are as follows</h4><br>
-  </div>
-  <div class="row slideanim">
-    <div class="col-sm-4 col-xs-12">
-      <div class="panel panel-default text-center">
-        <div class="panel-heading">
-          <h1>Academics</h1>
-        </div>
-        <div class="panel-footer">
-          <h4>Outcome Based Education<br><br>Mentoring<br><br>In-house Certification<br><br>Student Tracking<br><br>Load Distribution</h4>
-        </div>
-      </div>      
-    </div>     
-    <div class="col-sm-4 col-xs-12">
-      <div class="panel panel-default text-center">
-        <div class="panel-heading">
-          <h1>Examination</h1>
-        </div>
-        <div class="panel-footer">
-          <h4>Auto Block Preparation<br><br>Auto Supervision Allotment<br><br>Generate Supervision Orders<br><br>Seating Arrangement<br><br>Result Analysis in Minutes</h4>
-        </div>
-      </div>      
-    </div>       
-    <div class="col-sm-4 col-xs-12">
-      <div class="panel panel-default text-center">
-        <div class="panel-heading">
-          <h1>Organizer</h1>
-        </div>
-        <div class="panel-footer">
-          <h4>Digital Filing System<br><br>Online Approvals<br><br>Office Orders<br><br>ISO Style Formats<br><br>Portfolio Management</h4>
-        </div>
-      </div>      
-    </div>    
-  </div>
-</div>
-<br><br>
-
-  <div id="findmyblock" class="container-fluid">
+<!-- Container (Contact Section) -->
+<div id="findmyblock" class="container-fluid">
 <div style="text-align:center">
 <br>
 <font size="5"><font size="6"><span style="color:rgb(0,0,255)">Find your </span></font></font><font size="5"><font size="6"><span style="color:rgb(0,0,255)"><font size="5"><font size="6"><span style="color:rgb(0,0,255)">Block Number of </span></font></font>Today's Exam<br>
@@ -506,12 +333,24 @@ who are using Exam module provided by <b>AME Online Solutions</b>.</font></div>
 <iframe style="display:block;margin:5px auto;text-align:center;border:0px;" width="100%" height="1000" src="https://script.google.com/a/ameonlinesolutions.com/macros/s/AKfycbz4NpY4EpynmHjEMeayLQfgHNHOFSega0i4nH1hbPqs43lJ3vc/exec?title=FindMyBlock"></iframe>
 </div>
 
-  
-
 <footer class="container-fluid text-center">
-<section>© <!-- -->2017<!-- -->-<!-- -->2022<!-- --> <!-- -->AME Online Solutions<!-- -->, All rights reserved.</section></footer>
+  <!-- Container (Contact Section) -->
+      <div id="contact">
+      <font style="font-size:16px;color:rgb(255,255,255);">
+      <table width="100%" style="background-color:#b47800;"><tr><td align="left">
+        <i class="fa fa-whatsapp"></i> +91 9923663834 /+91 7972202909
+        </td><td align="center">
+        <i class='fa fa-envelope'></i> Email: info@ameonlinesolutions.com
+        </td><td align="center">
+        <i class='fa fa-map-marker'></i> Pune, India</td><td align="right">
+        &nbsp;&nbsp;<a href="#myPage" title="To Top"><i class='fa fa-arrow-circle-up' style="color:rgb(255,255,255);"></i></a>&nbsp;&nbsp;
+      </td></tr></table>
+      </font>
+      </div>
+</footer>
 
-
+<script>
+</script>
 
 </body>
-</html> 
+</html>
